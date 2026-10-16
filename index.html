@@ -45,7 +45,7 @@ header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--cream
 .cloud::before{content:"";position:absolute;left:14px;top:-14px;width:36px;height:36px;border-radius:50%;background:#fff}
 .c2{top:110px;transform:scale(.7);animation-duration:55s;animation-delay:-20s}
 .scene{max-width:640px;margin:10px auto 0;position:relative}
-.scene svg{display:block;width:100%;height:auto}
+.scene img{display:block;width:100%;height:auto;border-radius:24px;box-shadow:0 12px 32px rgba(0,0,0,.22)}
 /* mascot animation */
 .breathe{transform-origin:300px 300px;animation:breathe 4s ease-in-out infinite}
 .tail{transform-origin:462px 238px;animation:tail 3.2s ease-in-out infinite}
@@ -69,6 +69,8 @@ header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--cream
 .card{background:var(--card);border-radius:24px;padding:24px;box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s}
 .card:hover{transform:translateY(-6px) rotate(-.6deg);box-shadow:0 14px 32px rgba(63,138,74,.25)}
 .ic{font-size:2.4rem;width:68px;height:68px;border-radius:50%;display:grid;place-items:center;margin-bottom:12px;animation:bob 3.5s ease-in-out infinite}
+.product-photo{display:block;width:100%;height:190px;object-fit:cover;border-radius:18px;margin-bottom:16px;box-shadow:0 6px 18px rgba(0,0,0,.14)}
+.product-photo.milk-photo{height:260px;object-position:center 74%}
 .card:nth-child(odd) .ic{background:#ffeaf2}.card:nth-child(even) .ic{background:#efe8fc}.card:nth-child(3n) .ic{background:#fff3c4}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .ic{background:#3a4634!important}}
 @keyframes bob{50%{transform:translateY(-6px)}}
@@ -126,40 +128,7 @@ footer{text-align:center;padding:28px 18px 90px;background:var(--green);color:#1
 <a class="btn wa" href="https://wa.me/917288831125" target="_blank" rel="noopener">💬 WhatsApp</a>
 </div>
 <div class="scene">
-<svg viewBox="0 0 600 400" role="img" aria-label="Friendly cartoon buffalo sitting among flowers">
-<ellipse cx="300" cy="360" rx="330" ry="50" fill="#6fb36e"/>
-<ellipse cx="300" cy="372" rx="260" ry="26" fill="#58a05a"/>
-<g class="breathe">
-<g class="tail"><path d="M462 238 q40 20 28 70" stroke="#3b2f2a" stroke-width="9" fill="none" stroke-linecap="round"/><ellipse cx="488" cy="314" rx="11" ry="17" fill="#2b221e"/></g>
-<ellipse cx="350" cy="278" rx="130" ry="82" fill="#4a3b35"/>
-<ellipse cx="350" cy="298" rx="100" ry="50" fill="#5a4940"/>
-<rect x="250" y="318" width="44" height="38" rx="18" fill="#3b2f2a"/><rect x="330" y="322" width="44" height="34" rx="17" fill="#3b2f2a"/>
-<rect x="420" y="318" width="40" height="38" rx="18" fill="#3b2f2a"/>
-<ellipse cx="272" cy="354" rx="24" ry="7" fill="#241c19"/><ellipse cx="440" cy="354" rx="22" ry="7" fill="#241c19"/>
-<path d="M150 210 q-40-8-58 30" stroke="#e9e2d0" stroke-width="13" fill="none" stroke-linecap="round"/>
-<path d="M250 205 q50-30 90-8" stroke="#e9e2d0" stroke-width="0" fill="none"/>
-<path d="M165 178 q-70-30-82 20 q-2 14 12 4 q20-30 62-4z" fill="#efe7d4"/>
-<path d="M290 178 q70-30 82 20 q2 14-12 4 q-20-30-62-4z" fill="none"/>
-<ellipse cx="228" cy="250" rx="86" ry="72" fill="#5a4940"/>
-<g class="ear"><ellipse cx="148" cy="190" rx="34" ry="16" fill="#4a3b35" transform="rotate(20 148 190)"/><ellipse cx="148" cy="190" rx="20" ry="8" fill="#f7a8c4" transform="rotate(20 148 190)"/></g>
-<ellipse cx="316" cy="190" rx="34" ry="16" fill="#4a3b35" transform="rotate(-20 316 190)"/>
-<path d="M170 192 q-40-40-92-26 q36 4 60 40z" fill="#efe7d4"/>
-<path d="M290 192 q40-40 92-26 q-36 4-60 40z" fill="#efe7d4"/>
-<ellipse cx="228" cy="285" rx="52" ry="38" fill="#8a7468"/>
-<ellipse cx="208" cy="288" rx="7" ry="9" fill="#2b221e"/><ellipse cx="248" cy="288" rx="7" ry="9" fill="#2b221e"/>
-<path d="M210 308 q18 12 36 0" stroke="#2b221e" stroke-width="4" fill="none" stroke-linecap="round"/>
-<g class="eye"><ellipse cx="196" cy="240" rx="9" ry="11" fill="#fff"/><circle cx="198" cy="242" r="6" fill="#1b1512"/><circle cx="200" cy="239" r="2" fill="#fff"/></g>
-<g class="eye"><ellipse cx="260" cy="240" rx="9" ry="11" fill="#fff"/><circle cx="262" cy="242" r="6" fill="#1b1512"/><circle cx="264" cy="239" r="2" fill="#fff"/></g>
-<ellipse cx="178" cy="268" rx="11" ry="6" fill="#f7a8c4" opacity=".7"/><ellipse cx="280" cy="268" rx="11" ry="6" fill="#f7a8c4" opacity=".7"/>
-<circle cx="228" cy="182" r="22" fill="#f7a8c4"/><circle cx="228" cy="182" r="8" fill="#ffd95a"/>
-<circle cx="214" cy="170" r="12" fill="#c9b6f0"/><circle cx="244" cy="170" r="12" fill="#f7a8c4"/>
-</g>
-<g class="sway"><path d="M70 372 V320" stroke="#3f8a4a" stroke-width="5"/><g transform="translate(70 312)"><circle r="12" fill="#f7a8c4"/><circle cx="14" cy="-8" r="12" fill="#f7a8c4"/><circle cx="-14" cy="-8" r="12" fill="#f7a8c4"/><circle cx="8" cy="-22" r="12" fill="#f7a8c4"/><circle cx="-8" cy="-22" r="12" fill="#f7a8c4"/><circle cy="-12" r="9" fill="#ffd95a"/></g></g>
-<g class="sway b"><path d="M120 376 V335" stroke="#3f8a4a" stroke-width="5"/><g transform="translate(120 330)"><circle cx="-9" r="11" fill="#c9b6f0"/><circle cx="9" r="11" fill="#c9b6f0"/><circle cy="-10" r="11" fill="#c9b6f0"/><circle cy="9" r="11" fill="#c9b6f0"/><circle r="7" fill="#ffd95a"/></g></g>
-<g class="sway c"><path d="M520 372 V312" stroke="#3f8a4a" stroke-width="5"/><g transform="translate(520 304)"><circle cx="-10" r="12" fill="#ffd95a"/><circle cx="10" r="12" fill="#ffd95a"/><circle cy="-11" r="12" fill="#ffd95a"/><circle cy="11" r="12" fill="#ffd95a"/><circle r="8" fill="#e08a3c"/></g></g>
-<g class="sway b"><path d="M560 378 V340" stroke="#3f8a4a" stroke-width="5"/><g transform="translate(560 334)"><circle cx="-9" r="11" fill="#f7a8c4"/><circle cx="9" r="11" fill="#f7a8c4"/><circle cy="-10" r="11" fill="#f7a8c4"/><circle cy="9" r="11" fill="#f7a8c4"/><circle r="7" fill="#fff3c4"/></g></g>
-<g class="sway"><path d="M170 380 V348" stroke="#3f8a4a" stroke-width="5"/><g transform="translate(170 342)"><circle cx="-8" r="10" fill="#ffd95a"/><circle cx="8" r="10" fill="#ffd95a"/><circle cy="-9" r="10" fill="#ffd95a"/><circle cy="9" r="10" fill="#ffd95a"/><circle r="6" fill="#f7a8c4"/></g></g>
-</svg>
+<img src="buffalo-farm.jpeg" alt="Buffalo with calf in a sunny farm setting">
 </div>
 </div>
 </section>
@@ -176,11 +145,11 @@ footer{text-align:center;padding:28px 18px 90px;background:var(--green);color:#1
 <h2 data-te="మా ఉత్పత్తులు">Our products</h2>
 <p class="sub" data-te="ప్రతిరోజూ తాజాగా మా షాప్‌లో.">Fresh every day at our shop.</p>
 <div class="grid p">
-<div class="card rv"><div class="ic">🥛</div><h3 data-te="తాజా గేదె పాలు">Fresh buffalo milk</h3><p data-te="రోజూ ఉదయం 6:30, సాయంత్రం 4:30 గంటలకు తాజా గేదె పాలు. లీటరు ₹80.">Fresh buffalo milk daily at 6:30 AM and 4:30 PM. ₹80 per litre.</p></div>
-<div class="card rv"><div class="ic">🍶</div><h3 data-te="పెరుగు">Curd</h3><p data-te="రోజువారీ భోజనానికి తాజా పెరుగు. కిలో ₹100.">Fresh curd for everyday meals. ₹100 per kg.</p></div>
-<div class="card rv"><div class="ic">🏺</div><h3 data-te="కుండ పెరుగు">Kunda Perugu</h3><p data-te="పెళ్లిళ్లు, శుభకార్యాలకు మట్టి కుండల్లో సంప్రదాయ గడ్డ పెరుగు. కిలో ₹100.">Traditional set curd in earthen pots for weddings and functions. ₹100 per kg.</p></div>
-<div class="card rv"><div class="ic">🥤</div><h3 data-te="కూల్ డ్రింక్స్">Cool drinks</h3><p data-te="చల్లని పానీయాలు, ఎండలో ఉపశమనం.">Chilled drinks to beat the heat.</p></div>
-<div class="card rv"><div class="ic">🍦</div><h3 data-te="ఐస్ క్రీమ్స్">Ice creams</h3><p data-te="పిల్లలు, పెద్దలు అందరికీ ఇష్టమైన రుచులు.">Sweet flavours loved by kids and grown-ups.</p></div>
+<div class="card rv"><img class="product-photo milk-photo" src="milk.jpeg" alt="Fresh buffalo milk at Bunny Dairy Farm"><h3 data-te="తాజా గేదె పాలు">Fresh buffalo milk</h3><p data-te="రోజూ ఉదయం 6:30, సాయంత్రం 4:30 గంటలకు తాజా గేదె పాలు. లీటరు ₹80.">Fresh buffalo milk daily at 6:30 AM and 4:30 PM. ₹80 per litre.</p></div>
+<div class="card rv"><img class="product-photo" src="curd.jpeg" alt="Fresh curd"><h3 data-te="పెరుగు">Curd</h3><p data-te="రోజువారీ భోజనానికి తాజా పెరుగు. కిలో ₹100.">Fresh curd for everyday meals. ₹100 per kg.</p></div>
+<div class="card rv"><img class="product-photo" src="kundaperugu.jpeg" alt="Traditional Kunda Perugu in an earthen pot"><h3 data-te="కుండ పెరుగు">Kunda Perugu</h3><p data-te="పెళ్లిళ్లు, శుభకార్యాలకు మట్టి కుండల్లో సంప్రదాయ గడ్డ పెరుగు. కిలో ₹100.">Traditional set curd in earthen pots for weddings and functions. ₹100 per kg.</p></div>
+<div class="card rv"><img class="product-photo" src="cool-drinks.jpeg" alt="Cool drinks"><h3 data-te="కూల్ డ్రింక్స్">Cool drinks</h3><p data-te="చల్లని పానీయాలు, ఎండలో ఉపశమనం.">Chilled drinks to beat the heat.</p></div>
+<div class="card rv"><img class="product-photo" src="ice-cream.jpeg" alt="Ice cream cones and frozen treats"><h3 data-te="ఐస్ క్రీమ్స్">Ice creams</h3><p data-te="పిల్లలు, పెద్దలు అందరికీ ఇష్టమైన రుచులు.">Sweet flavours loved by kids and grown-ups.</p></div>
 </div></div></section>
 
 <section class="wed" id="wedding"><div class="wrap wedbox">
@@ -233,10 +202,18 @@ function apply(){document.querySelectorAll('[data-te]').forEach(function(e){
 // UL elements keep their English markup inside the attribute-free innerHTML captured on first run
 L.onclick=function(){te=!te;apply();try{localStorage.setItem('lang',te?'te':'en')}catch(e){}};
 try{if(localStorage.getItem('lang')==='te'){te=true;apply()}}catch(e){}
-document.getElementById('bf').onsubmit=function(ev){ev.preventDefault();
- var t=te?"నమస్తే! కుండ పెరుగు బుకింగ్:\nపేరు: ":"Hello! I'd like to book Kunda Perugu:\nName: ";
- var m=t+n.value+(te?"\nఫోన్: ":"\nPhone: ")+p.value+(te?"\nతేదీ: ":"\nDate: ")+d.value+(te?"\nపరిమాణం (కిలోలు): ":"\nQuantity (kg): ")+q.value;
- window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(m),"_blank")};
+document.getElementById('bf').addEventListener('submit',function(ev){
+ ev.preventDefault();
+ var form=ev.currentTarget;
+ var name=form.querySelector('#n').value.trim();
+ var phone=form.querySelector('#p').value.trim();
+ var date=form.querySelector('#d').value;
+ var quantity=form.querySelector('#q').value.trim();
+ var message=te
+  ?"నమస్తే! కుండ పెరుగు బుకింగ్:\nపేరు: "+name+"\nఫోన్: "+phone+"\nతేదీ: "+date+"\nపరిమాణం (కిలోలు): "+quantity
+  :"Hello! I'd like to book Kunda Perugu:\nName: "+name+"\nPhone: "+phone+"\nDate: "+date+"\nQuantity (kg): "+quantity;
+ window.location.assign("https://wa.me/"+WA+"?text="+encodeURIComponent(message));
+});
 // reveal on scroll
 var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.15});
 document.querySelectorAll('.rv').forEach(function(e,i){e.style.transitionDelay=(i%3)*90+'ms';io.observe(e)});
